@@ -41,16 +41,13 @@ C:\wamp64\www\blog.local\laravel\.
 3) создайте базу данных с именем 'tolstov_bd' и кодировкой 'utf8_unicode_ci';
 4) запустите терминал сервера;
 5) запустите миграцию командой:  
-    php artisan migrate.
+    php artisan migrate.  
 6) убедитесь, что в базе данных созданы таблицы: posts, users, subscriptions. 
-7) запустите заполнение таблиц фиктивными данными в следующем порядке:
-    php artisan db:seed --class=UserSeeder
-    php artisan db:seed --class=PostSeeder
-    php artisan db:seed --class=SubsSeeder
-В результате в БД появятся:
-1) 10 пользователей сайта;
-2) 20 постов;
-3) 20 случайно распределённых подписок пользователей друг на друга.
+7) запустите заполнение таблиц фиктивными данными в следующем порядке:  
+    php artisan db:seed --class=UserSeeder  
+    php artisan db:seed --class=PostSeeder  
+    php artisan db:seed --class=SubsSeeder  
+В результате в БД появятся 10 пользователей сайта, 20 постов; 20 случайно распределённых подписок пользователей друг на друга.
 # Вход на сайт
 Для входа на сайт требуется e-mail и пароль. Для сгенерированных пользователей:  
 e-mail: author_Z@example.ru;  
